@@ -1,0 +1,96 @@
+
+
+
+.nav_ul{
+    list-style-type: none;
+    width: 100%; 
+    top: 0px;
+    padding: 10px;
+    margin: 0px;
+    height: fit-content;
+    background-color: #222;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    font-weight: 300;
+    font-size: 1.25em;
+    color: white;
+
+}
+
+li, a {
+    display: block;
+    padding: 0px 5px 0px 5px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    
+ }
+
+ li, a:hover {
+    color: grey;
+ }
+
+ .item {
+    float: left;
+
+ }
+
+ .item-right {
+    float: right;
+ }
+
+ .about_back {
+    background-color: black;
+    align-items: center;
+    
+  }
+
+  .equal {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .overlay {
+    margin: 20px;
+    padding: 10px;
+    background-color: #222;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+  }
+  
+  .overlay_element {
+    margin: 5px;
+    padding: 10px;
+    border-bottom: solid white;
+    text-align: center;
+    align-items: center;
+    color: white;
+  }
+  
+  .coffee_attribute {
+    margin:10px 10px 15px 10px;
+    padding: 10px;
+    background-color: #333;
+    align-items: center;
+  }
+
+  .contribution-list {
+    text-align: center;
+    
+  }
+
+  .contribution-list ul {
+    display: inline-block;
+    text-align: left;
+  }
+
+  .contribution-list li {
+    color:white;
+    font-size: 1.2em;
+
+  }
+  .headshot {
+    width: 100%;
+    height: auto;
+  }
+
+  

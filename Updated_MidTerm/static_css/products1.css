@@ -1,0 +1,36 @@
+body{
+	background-color: #333333;
+}
+nav{
+	background-color: black;
+}
+a{
+	color: goldenrod;
+	font-size: 1.5rem;
+}
+.nav-link a:visited{
+    color: whitesmoke;
+ }
+
+.navbar-nav a:hover{
+    text-decoration: underline;
+    color: goldenrod;
+}
+h1{
+	color: goldenrod;
+	padding: 15px;
+}
+.container{
+	padding: 10px 20px 10px 20px;
+}
+.product{
+	width: 20rem;
+	height: 20rem;
+}
+.store-pic{
+	width: 100%;
+	height: 100%;
+}
+.row{
+	margin: 10px;
+}
