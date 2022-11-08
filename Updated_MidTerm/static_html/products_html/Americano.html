@@ -101,9 +101,9 @@
                 </div>
                 </div>
         
+        
 
-
-        <div class="flex-box-container col-lg-3" style="background-color: #333333; color: white;">
+        <div class="flex-box-container col-lg-3" id="sidebar" style="background-color: #333333; color: white;">
             <h1 class="flex-box-item">Reviews</h1> 
             <div class="flex-box-item">
                 <h3>Cold Brew is Great</h3>
@@ -125,14 +125,16 @@
                 </div>
             </nav>
             <div class="flex-box-item">
-            <form method="post">
-                <div class="flex_nav">
+            <form method="post" onsubmit="return validateForm()" name="review">
+                <div class="flex_nav" id = "form_div">
                 <h1>Give Us Feedback</h1>
 
                 <input class="form_item" name="uname" type="text">
                 <label for="uname">Name</label>
+                <p class="field_error"></p>
                 <input class="form_item" type="email" name="email">
                 <label for="email">Email</label><br>
+                <p class="field_error"></p>
                 <select class="form_item" name="drink" id="sel-drink">
                     <option value="1">Coldbrew</option>
                     <option value="2">French Roast</option>
@@ -142,12 +144,13 @@
                     <option value="6">Americano</option>
                 </select>
                 <textarea class="form_item" name="feedback" id="tarea" cols="30" rows="10">Give us your feed back!</textarea>
-                <button class="btn form_item" type="submit" style="background-color: #D2B48C;">Submit</button>
+                <button class="btn form_item" id="sub_but" onclick="sub_but" type="submit" style="background-color: #D2B48C;">Submit</button>
     
             </div>
             </form> 
             </div>
         </div>
+        
    
 
     
@@ -159,5 +162,11 @@
     <p>Author: Team6</p>
     <p><i>Site Design/ Logo</i></p>
 </footer>
+
+<script src="../../static_js/products.js"></script>
+
 </body>
+
+
+
 </html>
