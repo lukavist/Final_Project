@@ -1,0 +1,92 @@
+body{
+    background-color: #333333;
+}
+.jumbotron{
+    background-color:#333333 ;
+}
+table {
+    background-color: lightgray;
+    margin-top: 50px;
+}
+
+.active {
+    background-color: black;
+    color: white;
+}
+
+.flex_nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.flex_nav li{
+    list-style: none;
+    background-color: #D2B48C;
+    padding: 5px;
+    margin: 10px;
+    width:100%;  
+}
+
+.flex_nav a {
+    text-decoration: none;
+    color:white;
+}
+
+.flex-box-item {
+    border-bottom: solid white;
+    background-color: #333333;
+}
+
+.form_item {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.logo_area {
+    margin: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 10px ;
+    text-align: center;
+    overflow: hidden;
+}
+
+.image_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image_box a{
+    text-decoration: none;
+    color: black;
+}
+
+.image_box a:hover {
+    color: white;
+    border-bottom: solid black;
+}
+nav{
+    background-color: black;
+}
+footer{
+    padding: 10px 20px;
+    background-color: black;
+    color: #D2B48C;
+}
+
+.nav-item a{
+    color: #D2B48C;
+    font-size: 1.3rem;
+}
+.nav-link a:visited{
+    color: whitesmoke;
+ }
+
+.navbar-nav a:hover{
+    text-decoration: underline;
+    color: #D2B48C;
+}

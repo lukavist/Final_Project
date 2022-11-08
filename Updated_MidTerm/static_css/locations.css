@@ -1,0 +1,25 @@
+html {
+	height: 100%;
+}
+.section-container {
+    padding: 0px 30px;
+    background-color: #333
+}
+.store-container {
+    cursor: pointer;
+}
+
+.store-container:hover {
+    background-color: grey;
+}
+
+.store-logo-wrapper {
+	height: 14rem;
+	width: 19rem;
+}
+
+.store-logo {
+	height: 100%;
+	width: 100%;
+	/**/
+}

@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 1.2em;
+    background-color:#D2B48C ;
+    margin: 0px;
+
+}
+
+
+
+h1, h3, p {
+   text-align: center;
+   color: white; 
+}
+
+
+nav ul{
+   list-style-type: none;
+   width: 100%; 
+   top: 0px;
+   padding: 10px;
+   margin: 0px;
+   height: fit-content;
+   background-color: #222;
+   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+   overflow: hidden;
+   
+
+   
+    
+
+ }
+ 
+  .item {
+    float: left;
+   
+    
+ }
+
+ 
+
+ .flex-form {
+   display: flex;
+   flex-direction: row;
+ }
+
+ .item-right {
+   float: right;
+ }
+
+ li, a {
+    display: block;
+    padding: 0px 5px 0px 5px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    
+ }
+
+ li, a:hover {
+    color: grey;
+ }
+
+ .content_header {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   background-image: url("../img/bg_1.jpg");
+   background-size: cover;
+   height: 300px;
+ }
+
+ .locations_container {
+   background-color: #222;
+   padding: 20px; 
+ }
+
+ .location_item  {
+   width: 300px;
+   height: 300px;
+   margin: 20px;
+   text-align: center;
+
+   color: black;
+   background-color: #D2B48C;
+ }
+
+ .location_item h2 {
+   padding-top: 120px;
+ }
+
+ .location_item:hover {
+  color: white;
+ box-shadow: 10px 10px 32px -4px rgba(0,0,0,0.75);
+ transform: scale(1.1);
+ 
+ transition: all 0.25s ease-in 0.25s;
+ }
+
+
+ .about_back {
+  background-color: black;
+}
+
+.overlay {
+  margin: 20px;
+  padding: 10px;
+  background-color: #222;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+}
+
+.overlay_element {
+  margin: 5px;
+  padding: 10px;
+  border-bottom: solid white;
+  text-align: center;
+  color: white;
+}
+
+.coffee_attribute {
+  margin:10px 10px 15px 10px;
+  padding: 10px;
+  background-color: #333;
+  align-items: center;
+}
+
+
+.progress_bar {
+  width: 50%;
+  background-color: #D2B48C;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 10px;
+  display: inline-block;
+}
+
+footer{
+  padding: 10px 20px;
+  margin-top: 15px;
+  background-color: black;
+  color: #D2B48C;
+}
