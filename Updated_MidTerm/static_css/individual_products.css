@@ -3,9 +3,11 @@ body{
 }
 .jumbotron{
     background-color:#333333 ;
+    right: 200px;
 }
 table {
     background-color: lightgray;
+    margin-left: -15px;
     margin-top: 50px;
 }
 
@@ -73,7 +75,7 @@ nav{
     background-color: black;
 }
 footer{
-    padding: 10px 20px;
+    padding: 10px 10px;
     background-color: black;
     color: #D2B48C;
 }
@@ -89,4 +91,37 @@ footer{
 .navbar-nav a:hover{
     text-decoration: underline;
     color: #D2B48C;
+}
+
+#sidebar{
+    position: absolute;
+    /*right: 0;*/
+    width: 250px;
+    height: 100%;
+    border-left: 4px solid #333333;
+    right: -250px;
+    transition: all 300ms;
+}
+#sidebar.active{
+    right: 0;
+}
+#sidebar .toggle-btn{
+    position: absolute;
+    right: 300px;
+    top: 20px;
+    background-color: #D2B48C;
+    padding: 10px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+#sidebar .toggle-btn:hover{
+    background-color: #F0E68C;
+}
+
+#sidebar .toggle-btn span{
+    display: block;
+    width: 25px;
+    height: 4px;
+    background-color: #666;
+    margin: 4px 0;
 }

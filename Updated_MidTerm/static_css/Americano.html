@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../static_css/individual_products.css">
+    <title>Americano</title>
+</head>
+<body>
+
+    <nav class=" navbar navbar-expand-sm bg-gold">
+        <a class="navbar-brand" href="../../static_html/index.html"><img src="../../img/logo1.jpg" class="rounded-circle" alt="logo" style="width: 60px;">
+        </a>
+        <ul class="navbar-nav"> 
+                <li class="nav-item"><a class="nav-link" href="../../static_html/products.html">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../static_html/team.html">Our Team</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../static_html/locations.html">Locations</a></li>
+        </ul> 
+    </nav>
+    <div class="container ">
+        
+        <div class="row">
+            <div class="col-lg-9">
+                <div class="row">
+                    <div class="jumbotron col-md-12">
+                    <div class="row">
+                    <div class="col-md-6" style="background-color: #D2B48C;">
+                    <h1>Our Americano</h1>
+                    <p>Our Americano is made fresh everyday. Using a meticolus time consuming process yields the best coldbrew in michigan.</p>
+                    <div class="image_box">
+                        <a href="../../static_html/team.html"><h3>-- Lance Rafalko  Coffee House Team Member</h3></a>
+
+                        <img src="../../img/logo1.jpg" alt="" style="border-radius: 30px; width: 100px; height: 100px;">
+                    </div>
+                    </div>
+                    <div class="img-container col-md-6">
+                        <img src="../../img/coldbrew2.jpg" class="rounded" alt="Our Late" style="width: 350px; height: 350px;">
+                    </div>
+                    </div>
+        
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Type</th>
+                                <th scope="col">Flavor</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Aftertaste</th>
+                                <th scope="col">Roast</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">French Roast</th>
+                                <td>Bold</td>
+                                <td>Affordable</td>
+                                <td>Bitter</td>
+                                <td>Dark</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Frap</th>
+                                <td>Bright</td>
+                                <td>Expensive</td>
+                                <td>Sweet</td>
+                                <td>Light</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Late</th>
+                                <td>Smooth</td>
+                                <td>Affordable</td>
+                                <td>Mellow</td>
+                                <td>Moderate</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Cold Brew</th>
+                                <td>Bold</td>
+                                <td>Affordable</td>
+                                <td>Bright</td>
+                                <td>Dark</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Espresso</th>
+                                <td>Bold</td>
+                                <td>Expensive</td>
+                                <td>Energizing</td>
+                                <td>Dark</td>
+                            </tr>
+                            <tr class="active">
+                                <th scope="row">Americano</th>
+                                <td>Comforting</td>
+                                <td>Affordable</td>
+                                <td>Smooth</td>
+                                <td>Medium</td>
+                            </tr>
+                        </tbody> 
+                    </table>
+                    
+                
+                    </div>
+                </div>
+                </div>
+        
+        
+
+        <div class="flex-box-container col-lg-3" id="sidebar" style="background-color: #333333; color: white;">
+            <div class="toggle-btn" onclick="openMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <h1 class="flex-box-item">Reviews</h1>
+                <div class="flex-box-item">
+                    <h3>Cold Brew is Great</h3>
+                    <p>Cute Decore</p>
+                </div>
+                <div class="flex-box-item">
+                    <h3>Great Location</h3>
+                    <p>Coldbrew was dark and rich</p>
+                </div>
+                <nav class="flex-box-item">
+                    <h2 >Navigation</h2>
+                    <div class="flex_nav">
+                        <ul>
+                            <li><a href="../../static_html/index.html">Home Page</a></li>
+                            <li><a href="../../static_html/products.html">Products</a></li>
+                            <li><a href="../../static_html/locations.html">Locations</a></li>
+                        </ul>
+
+                    </div>
+                </nav>
+                <div class="flex-box-item">
+                <form method="post" onsubmit="return validateForm()" name="review">
+                    <div class="flex_nav" id = "form_div">
+                    <h1>Give Us Feedback</h1>
+
+                    <input class="form_item" name="uname" type="text">
+                    <label for="uname">Name</label>
+                    <p class="field_error"></p>
+                    <input class="form_item" type="email" name="email">
+                    <label for="email">Email</label><br>
+                    <p class="field_error"></p>
+                    <select class="form_item" name="drink" id="sel-drink">
+                        <option value="1">Coldbrew</option>
+                        <option value="2">French Roast</option>
+                        <option value="3">Frap</option>
+                        <option value="4">Late</option>
+                        <option value="5">Espresso</option>
+                        <option value="6">Americano</option>
+                    </select>
+                    <textarea class="form_item" name="feedback" id="tarea" cols="30" rows="10">Give us your feed back!</textarea>
+                    <p class="field_error"></p>
+                    <button class="btn form_item" id="sub_but" onclick="sub_but" type="submit" style="background-color: #D2B48C;">Submit</button>
+                    </div>
+            </form>
+            </div>
+        </div>
+        
+   
+
+    
+        
+        
+</div>
+</div>
+<footer>
+    <p>Author: Team6</p>
+    <p><i>Site Design/ Logo</i></p>
+</footer>
+<script src="../../static_js/Americano.js"></script>
+<script src="../../static_js/products.js"></script>
+
+</body>
+
+
+
+</html>
