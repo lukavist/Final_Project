@@ -19,12 +19,12 @@
                 <li class="nav-item"><a class="nav-link" href="../../static_html/locations.html">Locations</a></li>
         </ul> 
     </nav>
-    <div class="fluid-container ">
+    <div class="container ">
         
         <div class="row">
             <div class="col-lg-9">
                 <div class="row">
-                <div class="jumbotron col-md-12">
+                    <div class="jumbotron col-md-12">
                     <div class="row">
                     <div class="col-md-6" style="background-color: #D2B48C;">
                     <h1>Our Americano</h1>
@@ -104,50 +104,55 @@
         
 
         <div class="flex-box-container col-lg-3" id="sidebar" style="background-color: #333333; color: white;">
-            <h1 class="flex-box-item">Reviews</h1> 
-            <div class="flex-box-item">
-                <h3>Cold Brew is Great</h3>
-                <p>Cute Decore</p>
+            <div class="toggle-btn" onclick="openMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-            <div class="flex-box-item">
-                <h3>Great Location</h3>
-                <p>Coldbrew was dark and rich</p>
-            </div>
-            <nav class="flex-box-item">
-                <h2 >Navigation</h2>
-                <div class="flex_nav">
-                    <ul>
-                        <li><a href="../../static_html/index.html">Home Page</a></li>
-                        <li><a href="../../static_html/products.html">Products</a></li>
-                        <li><a href="../../static_html/locations.html">Locations</a></li>
-                    </ul>
-
+            <h1 class="flex-box-item">Reviews</h1>
+                <div class="flex-box-item">
+                    <h3>Cold Brew is Great</h3>
+                    <p>Cute Decore</p>
                 </div>
-            </nav>
-            <div class="flex-box-item">
-            <form method="post" onsubmit="return validateForm()" name="review">
-                <div class="flex_nav" id = "form_div">
-                <h1>Give Us Feedback</h1>
+                <div class="flex-box-item">
+                    <h3>Great Location</h3>
+                    <p>Coldbrew was dark and rich</p>
+                </div>
+                <nav class="flex-box-item">
+                    <h2 >Navigation</h2>
+                    <div class="flex_nav">
+                        <ul>
+                            <li><a href="../../static_html/index.html">Home Page</a></li>
+                            <li><a href="../../static_html/products.html">Products</a></li>
+                            <li><a href="../../static_html/locations.html">Locations</a></li>
+                        </ul>
 
-                <input class="form_item" name="uname" type="text">
-                <label for="uname">Name</label>
-                <p class="field_error"></p>
-                <input class="form_item" type="email" name="email">
-                <label for="email">Email</label><br>
-                <p class="field_error"></p>
-                <select class="form_item" name="drink" id="sel-drink">
-                    <option value="1">Coldbrew</option>
-                    <option value="2">French Roast</option>
-                    <option value="3">Frap</option>
-                    <option value="4">Late</option>
-                    <option value="5">Espresso</option>
-                    <option value="6">Americano</option>
-                </select>
-                <textarea class="form_item" name="feedback" id="tarea" cols="30" rows="10">Give us your feed back!</textarea>
-                <button class="btn form_item" id="sub_but" onclick="sub_but" type="submit" style="background-color: #D2B48C;">Submit</button>
-    
-            </div>
-            </form> 
+                    </div>
+                </nav>
+                <div class="flex-box-item">
+                <form method="post" onsubmit="return validateForm()" name="review">
+                    <div class="flex_nav" id = "form_div">
+                    <h1>Give Us Feedback</h1>
+
+                    <input class="form_item" name="uname" type="text">
+                    <label for="uname">Name</label>
+                    <p class="field_error"></p>
+                    <input class="form_item" type="email" name="email">
+                    <label for="email">Email</label><br>
+                    <p class="field_error"></p>
+                    <select class="form_item" name="drink" id="sel-drink">
+                        <option value="1">Coldbrew</option>
+                        <option value="2">French Roast</option>
+                        <option value="3">Frap</option>
+                        <option value="4">Late</option>
+                        <option value="5">Espresso</option>
+                        <option value="6">Americano</option>
+                    </select>
+                    <textarea class="form_item" name="feedback" id="tarea" cols="30" rows="10">Give us your feed back!</textarea>
+                    <p class="field_error"></p>
+                    <button class="btn form_item" id="sub_but" onclick="sub_but" type="submit" style="background-color: #D2B48C;">Submit</button>
+                    </div>
+            </form>
             </div>
         </div>
         
@@ -162,7 +167,7 @@
     <p>Author: Team6</p>
     <p><i>Site Design/ Logo</i></p>
 </footer>
-
+<script src="../../static_js/Americano.js"></script>
 <script src="../../static_js/products.js"></script>
 
 </body>
