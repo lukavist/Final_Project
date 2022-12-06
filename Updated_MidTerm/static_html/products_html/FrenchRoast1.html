@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../static_css/individual_products1.css">
+    <title>French Roast</title>
+</head>
+<body>
+    <div class="header">
+            <img src="../../img/logo1.jpg" class="rounded-circle" alt="logo" style="width:80px">
+            <h1>Coffee Shop</h1>
+        </div>
+    <div class="container">
+        
+        <div id="sidebar">
+            <div class="toggle-btn" onclick="openMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul>
+                <li><a href="../../static_html/team.html">Team</a></li>
+                <li><a href="../../static_html/products.html">Products</a> </li>
+                <li><a href="../../static_html/locations.html">Locations</a></li>
+                <li><a href="#">Reviews</a></li>
+            </ul>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <h1 style="color: #D2B48C;">Our French Roast</h1>
+                <p style="color: #D2B48C;">Our French Roast is made fresh everyday. Using a meticolus time consuming process yields the best coldbrew in michigan.</p>
+
+            </div>
+            <div class="col-md-6" >
+                <img src="../../img/french_roast1.jpg" class="rounded" alt="Espresso" style="width: 350px; height: 350px;">
+            </div>
+            <table class="table col-md-12">
+                <thead>
+                <tr>
+                    <th scope="col">Type</th>
+                    <th scope="col">Flavor</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Aftertaste</th>
+                    <th scope="col">Roast</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="active">
+                    <th scope="row">French Roast</th>
+                    <td>Bold</td>
+                    <td>Affordable</td>
+                    <td>Bitter</td>
+                    <td>Dark</td>
+                </tr>
+                <tr>
+                    <th scope="row">Frap</th>
+                    <td>Bright</td>
+                    <td>Expensive</td>
+                    <td>Sweet</td>
+                    <td>Light</td>
+                </tr>
+                <tr>
+                    <th scope="row">Late</th>
+                    <td>Smooth</td>
+                    <td>Affordable</td>
+                    <td>Mellow</td>
+                    <td>Moderate</td>
+                </tr>
+                <tr>
+                    <th scope="row">Cold Brew</th>
+                    <td>Bold</td>
+                    <td>Affordable</td>
+                    <td>Bright</td>
+                    <td>Dark</td>
+                </tr>
+                <tr>
+                    <th scope="row">Espresso</th>
+                    <td>Bold</td>
+                    <td>Expensive</td>
+                    <td>Energizing</td>
+                    <td>Dark</td>
+                </tr>
+                <tr>
+                    <th scope="row">Americano</th>
+                    <td>Comforting</td>
+                    <td>Affordable</td>
+                    <td>Smooth</td>
+                    <td>Medium</td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="flex-box-item form-inline">
+                <form class="form_inline" method="post" onsubmit="return validateForm()" name="review">
+                    <div class="flex_nav" id = "form_div" style="color: #D2B48C;">
+                        <h1>Give Us Feedback</h1>
+                        <label for="uname">Name:</label>
+                        <input class="form_item " name="uname" type="text" placeholder="Enter name">
+                        <p class="field_error"></p>
+                        <label for="email">Email:</label>
+                        <input class="form_item" type="email" name="email" placeholder="Enter email">
+                        <p class="field_error"></p><br>
+                        <select class="form_item" name="drink" id="sel-drink">
+                            <option value="1">Coldbrew</option>
+                            <option value="2">French Roast</option>
+                            <option value="3">Frap</option>
+                            <option value="4">Late</option>
+                            <option value="5">Espresso</option>
+                            <option value="6">Americano</option>
+                        </select>
+                        <textarea class="form_item" name="feedback" id="tarea" cols="30" rows="5" placeholder='Give us your feed back!'></textarea>
+                            <p class="field_error"></p>
+                            <button class="btn form_item" id="sub_but" onclick="sub_but" type="submit" style="background-color: #D2B48C;">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+<footer>
+    <p>Author: Team6</p>
+    <p><i>Site Design/ Logo</i></p>
+</footer>
+<script src="../../static_js/products.js"></script>
+<script src="../../static_js/menu.js"></script>
+
+</body>
+</html>
