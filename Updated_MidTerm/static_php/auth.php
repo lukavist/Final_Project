@@ -4,7 +4,7 @@
 
 	$pass = md5($pass."a1b2");
 
-	$mysql = new mysqli('localhost','root','','users-db');   /*replace with ('name_of_host','name_of_user','user_password''name_of_db')*/
+	$mysql = new mysqli('localhost','id19867202_lance','RNZuj@gJDMf<Vw22','id19867202_coffeehouse');   /*replace with ('name_of_host','name_of_user','user_password''name_of_db')*/
 
 	$sel = $mysql->query("SELECT * FROM `user` WHERE `email` = '$email' AND `pass` = '$pass'") ;
 	$users = $sel->fetch_assoc();

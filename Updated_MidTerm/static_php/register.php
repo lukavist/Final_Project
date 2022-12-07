@@ -16,7 +16,7 @@
 
 	$pass = md5($pass."a1b2");
 
-	$mysql = new mysqli('localhost','root','','users-db');   /*replace with ('name_of_host','name_of_user','user_password''name_of_db')*/
+	$mysql = new mysqli('localhost','id19867202_lance','RNZuj@gJDMf<Vw22','id19867202_coffeehouse');   /*replace with ('name_of_host','name_of_user','user_password''name_of_db')*/
 
 	$mysql->query("INSERT `user`(`email`, `name`, `pass`) VALUES ('$email','$name','$pass')");
 	$mysql->close();
