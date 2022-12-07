@@ -1,0 +1,16 @@
+
+body {
+    background-color: #333333;
+}
+.header{
+    text-align: center;
+    justify-content: center;
+    color: #D2B48C;
+    background-color: #3b3b3b;
+}
+form{
+	width: 500px;
+}
+.btn-succes{
+	background-color: lightgray;
+}
