@@ -25,7 +25,12 @@ function validateForm() {
         
 
     else if (reviewForm.email.value == "") {
-        alert("All fields must be filled");
+        return false;
+    
+    }
+
+
+    else if (reviewForm.feedback.value == "") {
         return false; 
     }
 
@@ -41,7 +46,7 @@ reviewForm.addEventListener("submit", (e) => {
     if (!valid_form) {
         for(let i = 0; i < ele.length; i+=1) {
             ele[i].innerHTML = "All fields must be full";
-            ele[i].style.backgroundColor = "red"; 
+            ele[i].style.backgroundColor = "red";
         }
         e.preventDefault()
      }
